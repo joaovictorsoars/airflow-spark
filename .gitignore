@@ -1,0 +1,9 @@
+logs/*
+dags/*
+spark_scripts/*
+plugins/*
+
+!logs/.gitkeep
+!dags/.gitkeep
+!spark_scripts/.gitkeep
+!plugins/.gitkeep
