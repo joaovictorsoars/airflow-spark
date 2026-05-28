@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-ENV SPARK_VERSION=4.1.0
+ENV SPARK_VERSION=4.1.2
 ENV SPARK_HOME=/opt/spark
 ENV PATH="$SPARK_HOME/bin:$PATH"
 ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
@@ -21,7 +21,7 @@ USER airflow
 
 RUN pip install --no-cache-dir --upgrade pip
 RUN pip install --no-cache-dir \
-    "pyspark==4.1.0" \
+    "pyspark==4.1.2" \
     "grpcio-status" \
     "apache-airflow-providers-common-compat==1.10.1" \
     "apache-airflow-providers-apache-spark==5.4.1"
